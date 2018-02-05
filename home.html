@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <!-- basic.html -->
+  <title>basic.html</title>
+  <meta charset = "UTF-8" />
+<link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<!--Nav Bar-->
+	<nav>
+		<div class="nav-wrapper container">
+              <a href="#!" class="brand-logo accent-color">jluo.com</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Portfolio</a></li>
+                <li><a href="badges.html">About</a></li>
+                <li><a href="collapsible.html">Contact</a></li>
+              </ul>
+          </div>
+	</nav> 
+
+	<!--Intro Section -->
+	<div class="hero">
+		<h1 class="introTitle center">Hey there! I'm <span  class="" style="color: #ef5350">Justin Luo</span></h1>
+		<h2 class=" center">and welcome to my site :)</h2>
+        <img class="responsive-img circle mainPortrait" src="https://s3.amazonaws.com/fetchmi/AboutPage/justin.jpg">
+	</div>
+
+	<!--Projects Section -->
+	<div class="flex-grid">
+	  <div class="col-bigger box-bigger center" style="position: relative;">
+	  	
+	  	<a href="https://fetchmi.com" target="_blank" style="display: flex; align-items: center; justify-content: center; height: 100%; text-decoration: none;">
+		  		<h1 class="project-title-large">FetchMi</h1>
+		</a>
+
+	  </div>
+	  <div class="col center">
+		  <div id="box2" class="box center" style="background-color: #ffd54f;">
+		  	<a href="https://fetchmi.com" target="_blank" style="display: flex; align-items: center; justify-content: center; height: 100%; text-decoration: none;">
+		  	<h2 class="project-title">What the Duc</h2>
+			</a>
+		  </div>
+		  <div class="box center" style="background-color: #e57373;">3</div>
+	   </div>
+	</div>
+	<div class="flex-grid">
+	  <div class="col box center" style="background-color: #ce93d8;">1</div>
+	  <div class="col box center" style="background-color: #4db6ac;">2</div>
+	  <div id="box6" class="col box center" style="background-color: #616161;"><a href="https://fetchmi.com" target="_blank" style="display: flex; align-items: center; justify-content: center; height: 100%; text-decoration: none;">
+		  	<h2 class="project-title">Emory Course Critique</h2>
+			</a></div>
+	</div>
+
+
+	<!--About Section -->
+	<div class="about-section">
+		<h1 class="about-title accent-color">About Me</h1>
+
+		<p class="about-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+		</p>
+		<p class="about-text">
+		 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+	</div>
+	<div style="height: 100px"></div>
+	<!--About Section -->
+	<div class="game-section" style="height: 400px">
+		<div class="game-container">
+			<h1 class="game-title accent-color">A Cool Game</h1>
+		</div>
+	</div>
+
+	<!--Call your modal-->
+    <a id="demo01" href="#animatedModal">DEMO01</a>
+
+    <!--DEMO01-->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+            CLOSE MODAL
+        </div>
+            
+        <div class="modal-content">
+                  <!--Your modal content goes here-->
+        </div>
+    </div>
+
+
+
+<script src="yourPath/animatedModal.min.js"></script>
+
+<script>
+$("#demo01").animatedModal();
+
+$(document).scroll(function() {
+    if($(document).scrollTop() > 50){
+    	$('nav').addClass('z-depth-1');
+
+    }
+    else if($(document).scrollTop() < 50)
+    {
+    	 $('nav').removeClass('z-depth-1');
+
+
+
+    }
+});
+
+</script>
+</body>
+</html>

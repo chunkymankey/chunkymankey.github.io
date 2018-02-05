@@ -1,0 +1,278 @@
+
+/* Some Global Set Up */
+
+html {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+
+}
+body{
+	margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.right{
+	float: right;
+}
+
+
+.accent-color{
+	color: #03a9f4;
+}
+
+
+img.responsive-img, video.responsive-video {
+    max-width: 100%;
+    height: auto;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.center{
+	text-align: center;
+}
+
+.z-depth-1{
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+
+
+/* Nav Bar */
+nav {
+	color: #212121;
+    background-color: white;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    position: fixed;
+    z-index: 99;
+
+}
+
+nav, nav .nav-wrapper{ 
+	height: 72px;
+    line-height: 72px;
+
+}
+
+
+nav .nav-wrapper {
+    position: relative;
+
+}
+
+nav .brand-logo {
+    position: absolute;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+}
+
+nav ul{
+	margin: 0;
+}
+
+nav ul li {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    float: left;
+    padding: 0;
+}
+
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #212121;
+    display: block;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+.fixed-nav{
+	width: 75%;
+	position: fixed;
+	left: 50%;
+	margin-left: -37.5%;
+}
+
+
+/*Body*/
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
+}
+
+
+
+/*Section 1 */
+
+.introTitle{
+	font-weight: 500;
+	font-size: 3rem;
+	margin: 8px;
+	padding: 0;
+	color: #212121;
+
+}
+
+.hero {
+    padding: 7em 0;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.mainPortrait {
+	max-height: 200px;
+
+}
+
+/* Section 2 */
+
+.box{
+	height: 256px;
+}
+
+.box-bigger{
+	-webkit-transition: background-image 2s ease-in-out;
+	transition: background-image 2s ease-in-out;
+	height: 512px;
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://s3.amazonaws.com/fetchmi/HomePage/homebackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+   
+
+}
+
+#box2{
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+	url('https://4vector.com/i/free-vector-ducky-clip-art_128090_ducky-clip-art/Ducky_clip_art_hight.png');
+	background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#box6{
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+	url('https://www.sph.emory.edu/departments/epi/images/emory%20hospital-aerial%20shot.jpg');
+	background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.col {
+  flex: 1;
+
+}
+
+.col-bigger{
+	flex: 2;
+}
+
+.project-title-large{
+	font-size: 5em;
+	font-weight: 300;
+	color: white;
+}
+
+h2.project-title{
+	font-size: 2.4em;
+	font-weight: 300;
+	color: white;
+
+}
+
+.project-img{
+	height: 100%; 
+	width: 100%;
+}
+
+.project-description{
+	font-size: 1.2em;
+	font-weight: 400;
+	color: white;
+
+}
+
+
+
+/* Section 3 */
+
+
+
+.about-section{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-title{
+	font-size: 4em;
+    padding: 2em 0 .3em 0;
+}
+
+p.about-intro {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+p.about-text{
+	font-size: 1.2em;
+    line-height: 1.8em;
+    padding: 0 0 1.5em;
+    font-weight: 200;
+}
+
+
+
+/* Section 4 */
+
+.game-section {
+	background-color: #fafafa;
+	padding: 2em 0 .3em 0;
+
+}
+.game-title{
+	font-size: 4em;
+}
+
+.game-container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
