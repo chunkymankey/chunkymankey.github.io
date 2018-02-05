@@ -147,19 +147,19 @@ nav ul a {
 /* Section 2 */
 
 .box{
-	height: 256px;
+	height: 280px;
 }
 
 .box-bigger{
 	-webkit-transition: background-image 2s ease-in-out;
 	transition: background-image 2s ease-in-out;
-	height: 512px;
+	height: 560px;
 	background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('https://s3.amazonaws.com/fetchmi/HomePage/homebackground.jpg');
+    url('../imgs/fetchmibackground.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
    
@@ -177,7 +177,7 @@ nav ul a {
     background-size: cover; 
 }
 
-#box6{
+#emoryCC-box{
 	background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -229,6 +229,17 @@ h2.project-title{
 
 }
 
+.button {
+    background-color: #03a9f4; /* accent color */
+    border: none;
+    color: white;
+    padding: 35px 62px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+}
 
 
 /* Section 3 */
@@ -258,6 +269,21 @@ p.about-text{
     font-weight: 200;
 }
 
+/*modal stuff*/
+
+.modal-text{
+	font-size: 1.8em;
+	color: #fafafa;
+	font-weight: 300;
+	line-height: 1.6em;
+}
+
+.modal-header{
+	font-size: 2.5em;
+	color: #fafafa;
+	font-weight: 700;
+}
+
 
 
 /* Section 4 */
@@ -275,4 +301,7 @@ p.about-text{
 	max-width: 800px;
 	margin: 0 auto;
 }
+
+
+
 
