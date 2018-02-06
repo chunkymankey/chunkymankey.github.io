@@ -18,7 +18,7 @@
 	<!--Nav Bar-->
 	<nav>
 		<div class="nav-wrapper container">
-          <a href="#!" class="brand-logo accent-color">jluo.com</a>
+          <a href="https://luo-justin.github.io" class="brand-logo accent-color">luo-justin.github.io</a>
           <ul class="right hide-on-med-and-down">
             <li><a class="navLinks cool-link" href="#project-section">Portfolio</a></li>
             <li><a class="navLinks cool-link" href="#about-section">About</a></li>
@@ -54,7 +54,11 @@
 			  	<h2 class="project-title">What the Duc</h2>
 				</a>
 			  </div>
-			  <div class="box center" style="background-color: #e57373;"></div>
+			  <div id="box3" class="box center" style="background-color:#e57373;">
+			  	<a id="personalSite" href="#personalSite-modal" target="_blank" style="display: flex; align-items: center; justify-content: center; height: 100%; text-decoration: none;">
+			  	<h2 class="project-title">My Personal Website<br><i class="material-icons" style="vertical-align: middle; color: white; font-size: 64px; padding-top: 24px;">whatshot</i></h2>
+				</a>
+			  </div>
 		   </div>
 		</div>
 		<div class="flex-grid">
@@ -71,10 +75,10 @@
 	<div id="about-section" class="about-section">
 		<h1 class="about-title accent-color">About Me</h1>
 
-		<p class="about-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+		<p class="about-intro">I am currently a sophomore at Emory University majoring in Computer Science (B.S) and Economics (B.A). 
 		</p>
 		<p class="about-text">
-		 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		 I was born in Vancouver, Canada, moved to California,USA until I was 9, and then lived in Shanghai, China for another 9 years. In my free time, I like to build websites (such as this one) or mobile apps. If I'm not doing that, then I can usually be seen watching random videos on youtube or browsing the latest and dankest memes. I also enjoy playing piano and boxing in my spare time. I am currently working as the CTO of FetchMi.
 		</p>
 	</div>
 	<div style="height: 100px"></div>
@@ -96,7 +100,7 @@
 			<br>
 			<br>
 			<div style="display: flex; flex-direction: row; justify-content: space-between;">
-  				<a id="github-link" class="links" href="https://github.com/chunkymankey" target="_blank"> <i class="fab fa-github fa-7x" style=""></i></a>
+  				<a id="github-link" class="links" href="https://github.com/luo-justin" target="_blank"> <i class="fab fa-github fa-7x" style=""></i></a>
   				<a id="mail-link" class="links"  href="mailto:justinluo1998@gmail.com?Subject=Hello%20Justin"><i class="fa fa-envelope fa-7x" aria-hidden="true" style=""></i></a>
   				<a id="fb-link" class="links" href="https://www.facebook.com/justin.luo.395" target="_blank"><i class="fab fa-facebook fa-7x" style=""></i></a>
   				<a id="linkedin-link" class="links" href="#!"><i class="fab fa-linkedin-in fa-7x" style=""></i></a>
@@ -157,6 +161,30 @@
 			</div>
         </div>
 
+         <!--Personal Site  Modal-->
+        <div id="personalSite-modal">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-personalSite-modal"> 
+            	<div style="height: 24px"></div>
+                <i class="material-icons right" style="font-size: 48px; position: relative; right: 24px">close</i>
+
+            </div>
+            
+            <div class="modal-content" style="">
+            	<div class="container">
+	                <h2 class="project-title-large center">Personal Website</span></h2>
+	                <p class="modal-header"><b>Description</b></p>
+	                <p class="modal-text">This Website was created from scratch (no frameworks or website builders) and only uses Jquery and Awesomefonts as a dependancy. It is fully responsive and mobile-friendly as well!</p>
+	                <br>
+	                <p class="modal-header"><b>My Role</b></p>
+	                <p class="modal-text">I created this website with my bare hands.</p>
+	                <div class="button-wrapper center" style="padding-top: 48px; padding-bottom: 48px">
+	                	<a href="https://luo-justin.github.io" target="_blank" class="button z-depth-1" style="">This would Link Back Here...</a>
+	            	</div>
+            	</div>
+			</div>
+        </div>
+
         <!--Emory Course Critique Modal-->
         <div id="emorycc-modal">
             <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
@@ -209,6 +237,7 @@ $('a[href*="#"]')
   .not('[href="#fetchMi-modal"]')
   .not('[href="#wtDuc-modal"]')
   .not('[href="#emorycc-modal"]')
+  .not('[href="#personalSite-modal"]')
 
   .click(function(event) {
     // On-page links
@@ -309,6 +338,30 @@ $('a[href*="#"]')
 	        console.log("The animation is completed");
 	    }
 	});
+
+
+
+	//Personal Website Modal
+	$("#personalSite").animatedModal({
+	    modalTarget:'personalSite-modal',
+	    animatedIn:'bounceInUp',
+	    animatedOut:'bounceOutDown',
+	    color:'#e57373',
+	    // Callbacks
+	    beforeOpen: function() {
+	        console.log("The animation was called");
+	    },           
+	    afterOpen: function() {
+	        console.log("The animation is completed");
+	    }, 
+	    beforeClose: function() {
+	        console.log("The animation was called");
+	    }, 
+	    afterClose: function() {
+	        console.log("The animation is completed");
+	    }
+	});
+
 
 
 
