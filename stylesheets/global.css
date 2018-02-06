@@ -271,6 +271,16 @@ h2.project-title{
 
 }
 
+p.project-date{
+	margin: 24px auto; 
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+p.project-date-large{
+	font-size: 1.6rem;
+}
+
 .project-img{
 	height: 100%; 
 	width: 100%;
@@ -298,6 +308,20 @@ h2.project-title{
 .button.red{
     background-color: #e57373; /* accent color */
    
+}
+
+.techIcons-container{
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-around;
+	padding-bottom: 48px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.techIcons{
+	font-size: 100px; 
+	color: white !important;
 }
 
 /* Section 3 */
