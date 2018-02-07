@@ -55,9 +55,11 @@
         <img class="responsive-img circle mainPortrait" src="https://s3.amazonaws.com/fetchmi/AboutPage/justin.jpg">
        
 	</div>
- <div id="project-section">
-	</div>
+ 	
+
+
 	<!--Projects Section -->
+	<div id="project-section"></div>
 		<div class="flex-grid">
 		  <div id="fetchMiBox" class="col-bigger box-bigger center" style="position: relative;">
 		  	
@@ -91,6 +93,7 @@
 			</a>
 		  </div>
 		</div>
+
 
 	<!--About Section -->
 	<div id="about-section" class="container">
@@ -343,6 +346,7 @@ $('a[href*="#"]')
 	    // Callbacks
 	    beforeOpen: function() {
 	        console.log("The animation was called");
+	        $('#fetchMi-modal').addClass('ios-scroll');
 	       
 
 	    },           
@@ -352,6 +356,7 @@ $('a[href*="#"]')
 	    }, 
 	    beforeClose: function() {
 	        console.log("The animation was called");
+	       	$('#fetchMi-modal').removeClass('ios-scroll');
 
 	    }, 
 	    afterClose: function() {

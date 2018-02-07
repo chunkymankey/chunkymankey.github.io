@@ -196,7 +196,14 @@ nav .container{
   width: 80%;
 }
 
-.modal-content{
+.modals{
+  overflow-y: auto;
+  -webkit-overflow-scrolling: auto ;
+
+}
+
+.ios-scroll{
+  overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch !important;
 }
 
