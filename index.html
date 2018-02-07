@@ -411,8 +411,8 @@ $('a[href*="#"]')
 	    color:'#e57373',
 	    // Callbacks
 	    beforeOpen: function() {
-	        console.log("The animation was called");
-	       
+	     console.log("The animation was called");
+
 
 	    },           
 	    afterOpen: function() {
@@ -428,6 +428,29 @@ $('a[href*="#"]')
 	});
 
 
+/*hide nav bar on scroll down*/
+$(document).ready(function () {
+  
+  'use strict';
+  
+   var c, currentScrollTop = 0,
+       navbar = $('nav');
+
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+     
+      currentScrollTop = a;
+     
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollUp");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollUp");
+      }
+      c = currentScrollTop;
+  });
+  
+});
 
 
 $(document).scroll(function() {
