@@ -173,9 +173,22 @@ a#downloadResumeLink:hover{
 .container {
   margin: 0 auto;
   max-width: 1000px;
+  width: 70%;
+}
+
+nav .container{
+  margin: 0 auto;
+  max-width: 1280px;
   width: 80%;
 }
 
+.modal-content .container{
+  width: 80%;
+}
+
+.modal-content{
+  -webkit-overflow-scrolling: touch !important;
+}
 
 
 /*Section 1 */
@@ -340,9 +353,9 @@ p.project-date-large{
 .techIcons-container{
 	display: flex; 
 	flex-direction: row; 
-	justify-content: space-around;
+	justify-content: space-between;
 	padding-bottom: 48px;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -521,9 +534,23 @@ a#mail-link:hover{
   }
 }
 
+/*medium screen*/
+@media only screen and (max-width: 992px) {
 
+h2.project-title{
+  font-size: 1.6em;
+}
+
+.links{
+    font-size: 12px;
+  }
+
+}
+
+/*small screen*/
 @media only screen and (max-width: 601px) {
   
+
   
   /*Section 2 */
 
@@ -578,10 +605,9 @@ a#mail-link:hover{
 
   
   nav .brand-logo {
-    font-size: 2em;
+    font-size: 1.5em;
     position: relative;
-    display: block;
-    text-align: center;
+    text-align: left;
   }
 
   p.project-date{
@@ -598,8 +624,55 @@ a#mail-link:hover{
   .links{
     width: 50%;
     margin-bottom: 25px;
+    font-size: 12px;
   }
 
+}
+
+
+/*side - nav*/
+
+.btn-open:hover{
+  cursor: pointer;
+}
+.cool-link-mobile{
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+.cool-link-mobile:hover{
+  color: #03a9f4;
+  transition: color 0.2s ease-in-out;
+
+}
+
+
+.cool-link-red-mobile{
+  font-size: 48px;
+  color: #03a9f4;
+  text-align: center;
+
+}
+
+ul.side-nav-links li{
+  padding: 24px 0px;
+
+}
+
+
+
+/*overlay*/
+.overlay {
+  display:none;
+  position:fixed;
+  top:0;
+  height:100%;
+  width:100%;
+  background:#212121f7; 
+  overflow:hidden;
+  z-index:100;
 }
 
 
