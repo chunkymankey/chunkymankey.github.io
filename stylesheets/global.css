@@ -24,8 +24,13 @@ a{
 div{
 	outline: none;
 }
+
 .right{
 	float: right;
+}
+
+.hide-on-mobile{
+
 }
 
 
@@ -167,7 +172,7 @@ a#downloadResumeLink:hover{
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1000px;
   width: 80%;
 }
 
@@ -242,12 +247,34 @@ a#downloadResumeLink:hover{
     background-size: cover; 
 }
 
+
+
+/* Large */
+
 .flex-grid {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
+  justify-content: space-around;
 }
+
+
+
+/* Medium screens */
+@media all and (max-width: 992px) {
+  .flex-grid {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 601px) {
+  .flex-grid {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
 
 .col {
   flex: 1;
@@ -327,12 +354,6 @@ p.project-date-large{
 /* Section 3 */
 
 
-
-.about-section{
-	max-width: 800px;
-	margin: 0 auto;
-}
-
 .about-title{
 	font-size: 4em;
     padding: 2em 0 .3em 0;
@@ -373,6 +394,12 @@ p.about-text{
     color:#fff;
     }
 
+#btn-close-modal i{
+    font-size: 48px; 
+    position: relative; 
+    right: 24px;
+    top: 24px;
+  }
 
 
 /* Section 4 */
@@ -386,12 +413,16 @@ p.about-text{
 	font-size: 4em;
 }
 
-.game-container{
-	max-width: 800px;
-	margin: 0 auto;
-}
 
 /* Section 5 */
+
+
+.flex-grid-contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 
 a.links {
 	color: #9e9e9e;
@@ -417,6 +448,158 @@ a#linkedin-link:hover{
 a#mail-link:hover{
 	color: #e57373;
 	transition: all 0.3s ease-in-out;
+}
+
+
+
+/*********************
+  Media Query Classes
+**********************/
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .hide-on-med-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .hide-on-large-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .show-on-large {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .show-on-small {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .show-on-medium-and-up {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .show-on-medium-and-down {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .center-on-small-only {
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 601px) {
+  
+  
+  /*Section 2 */
+
+  .techIcons{
+    font-size: 48px;
+  }
+
+  
+  .box-bigger{
+    height: 250px;
+  }
+
+  .box{
+    height: 180px;
+  }
+
+  .project-title-large{
+    font-size: 2.3em;
+    font-weight: 400;
+  }
+
+  .fa-7x{
+    font-size: 72px;
+  }
+
+  .about-title{
+    font-size: 3em;
+  }
+
+  .game-title{
+    font-size: 3em;
+  }
+
+  #emoryCC-box, #emorycc{
+    order: 0;
+}
+ 
+
+  h2.project-title{
+    font-size: 1.8em;
+    font-weight: 400;
+  }
+
+
+   .modal-text{
+    font-size: 1.3em;
+    font-weight: 400;
+   }
+   .modal-header{
+    font-size: 1.6em;
+   }
+
+  
+  nav .brand-logo {
+    font-size: 2em;
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+
+  p.project-date{
+    font-size: 1.2rem;
+  }
+
+  #btn-close-modal i{
+    font-size: 32px; 
+    position: relative; 
+    right: 12px;
+    bottom: 6px;
+  }
+
+  .links{
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
 }
 
 
