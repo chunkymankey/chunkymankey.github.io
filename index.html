@@ -4,8 +4,7 @@
   <!-- basic.html -->
 	<title>Justin Luo</title>
 	<meta charset = "UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<link rel="stylesheet" type="text/css" href="stylesheets/global.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
@@ -17,6 +16,7 @@
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 <body>
+<div id="site-wrapper">
 
 	<!--Nav Bar-->
 		
@@ -275,7 +275,7 @@
 	</footer>
 
 
-
+</div>
 
 
 <script src="js/animatedModal.min.js"></script>
@@ -347,7 +347,7 @@ $('a[href*="#"]')
 	    beforeOpen: function() {
 	        console.log("The animation was called");
 	        $('#fetchMi-modal').addClass('ios-scroll');
-	       
+
 
 	    },           
 	    afterOpen: function() {
@@ -356,11 +356,12 @@ $('a[href*="#"]')
 	    }, 
 	    beforeClose: function() {
 	        console.log("The animation was called");
-	       	$('#fetchMi-modal').removeClass('ios-scroll');
 
 	    }, 
 	    afterClose: function() {
 	        console.log("The animation is completed");
+	       	$('#fetchMi-modal').removeClass('ios-scroll');
+
 	    }
 	});
 
@@ -373,6 +374,8 @@ $('a[href*="#"]')
 	    // Callbacks
 	    beforeOpen: function() {
 	        console.log("The animation was called");
+	        $('#emorycc-modal').addClass('ios-scroll');
+
 	    },           
 	    afterOpen: function() {
 	        console.log("The animation is completed");
@@ -382,6 +385,8 @@ $('a[href*="#"]')
 	    }, 
 	    afterClose: function() {
 	        console.log("The animation is completed");
+	       	$('#emorycc-modal').removeClass('ios-scroll');
+
 	    }
 	});
 
@@ -394,6 +399,8 @@ $('a[href*="#"]')
 	    // Callbacks
 	    beforeOpen: function() {
 	        console.log("The animation was called");
+	       	$('#wtDuc-modal').addClass('ios-scroll');
+
 	    },           
 	    afterOpen: function() {
 	        console.log("The animation is completed");
@@ -403,6 +410,8 @@ $('a[href*="#"]')
 	    }, 
 	    afterClose: function() {
 	        console.log("The animation is completed");
+	       	$('#wtDuc-modal').removeClass('ios-scroll');
+
 	    }
 	});
 
@@ -417,6 +426,7 @@ $('a[href*="#"]')
 	    // Callbacks
 	    beforeOpen: function() {
 	     console.log("The animation was called");
+	     $('#personalSite-modal').addClass('ios-scroll');
 
 
 	    },           
@@ -429,6 +439,8 @@ $('a[href*="#"]')
 	    }, 
 	    afterClose: function() {
 	        console.log("The animation is completed");
+	       	$('#personalSite-modal').removeClass('ios-scroll');
+
 	    }
 	});
 
