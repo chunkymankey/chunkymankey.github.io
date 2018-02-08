@@ -676,7 +676,7 @@ h2.project-title{
   cursor: pointer;
 }
 .cool-link-mobile{
-  font-size: 48px;
+  font-size: 42px;
   color: white;
   text-align: center;
   transition: color 0.2s ease-in-out;
@@ -690,7 +690,7 @@ h2.project-title{
 
 
 .cool-link-red-mobile{
-  font-size: 48px;
+  font-size: 42px;
   color: #03a9f4;
   text-align: center;
 
@@ -701,6 +701,12 @@ ul.side-nav-links li{
 
 }
 
+@media only screen and (max-height: 601px) {
+  ul.side-nav-links li{
+  padding: 8px 0px;
+
+}
+}
 
 
 /*overlay*/
@@ -711,7 +717,7 @@ ul.side-nav-links li{
   height:100%;
   width:100%;
   background:#212121f7; 
-  overflow:hidden;
+  overflow: hidden;
   z-index:100;
 }
 
