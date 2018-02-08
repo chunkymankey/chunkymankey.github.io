@@ -697,13 +697,13 @@ h2.project-title{
 }
 
 ul.side-nav-links li{
-  padding: 24px 0px;
+  padding: 24px 8px;
 
 }
 
-@media only screen and (max-height: 601px) {
+@media only screen and (max-height: 401px) {
   ul.side-nav-links li{
-  padding: 8px 0px;
+  padding: 12px 8px;
 
 }
 }
