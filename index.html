@@ -50,8 +50,8 @@
 	<!--Intro Section -->
 	<div class="hero">
 		<div style="height: 36px;"></div>
-		<h1 class="introTitle center">Hey there! I'm <span  class="" style="color: #03a9f4">Justin Luo</span></h1>
-		<h2 class=" center">and welcome to my site :)</h2>
+		<h1 class="introTitle center typewriter" style="display: inline;"></h1>
+		<div style="height: 48px;"></div>
         <img class="responsive-img circle mainPortrait" src="https://s3.amazonaws.com/fetchmi/AboutPage/justin.jpg">
        
 	</div>
@@ -159,7 +159,7 @@
 	                <p class="modal-text"> FetchMi.com is an internet company that looks to change the way people connect with services in Atlanta. There are over 1200 companies aggregated on this platform and users can search, message, and make payments directly on this web app. </p>
 	                <br>
 	                <p class="modal-header"><b>My Role</b></p>
-	                <p class="modal-text">FetchMi.com is an internet company that looks to change the way people connect with services in Atlanta. There are over 1200 companies aggregated on this platform and users can search, message, and make payments directly on this website.</p>
+	                <p class="modal-text">I am currently working as the CTO of FetchMi. I work on both the front end and back end of this site, and oversee the technologies behind FetchMi. Recently I finished implementing the Algolia search algorithim on our site's search page to create more accurate search results for our users.</p>
 	                <div class="button-wrapper center" style="padding-top: 48px; padding-bottom: 48px">
 	                	<a href="https://fetchmi.com" target="_blank" class="button red z-depth-1" style="">Link To Website</a>
 	            	</div>
@@ -251,10 +251,10 @@
 
 					</div>
 	                <p class="modal-header"><b>Description</b></p>
-	                <p class="modal-text"> FetchMi.com is an internet company that looks to change the way people connect with services in Atlanta. There are over 1200 companies aggregated on this platform and users can search, message, and make payments directly on this web app. </p>
+	                <p class="modal-text">Emory Course Critique is a review site that lets users review and read reviews on classes relevant to them. It contains all the courses and professors that the Emory Undergraduate program has. Currently this site is in the trial stage.</p>
 	                <br>
 	                <p class="modal-header"><b>My Role</b></p>
-	                <p class="modal-text">FetchMi.com is an internet company that looks to change the way people connect with services in Atlanta. There are over 1200 companies aggregated on this platform and users can search, message, and make payments directly on this web app.s</p>
+	                <p class="modal-text">I worked mostly on the front end of this site using React.</p>
 	                <div class="button-wrapper center" style="padding-top: 48px; padding-bottom: 48px">
 	                	<a href="https://emorycoursecritique.com" target="_blank" class="button z-depth-1" style="">Link To Website</a>
 	            	</div>
@@ -279,8 +279,22 @@
 
 
 <script src="js/animatedModal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
 
 <script>
+
+var options = {
+  strings: ["Hey there!" , "<span style='color: #03a9f4'>Justin Luo</span> welcomes you to his site!" , "<span style='color: #03a9f4'>Justin Luo.</span>"],
+  typeSpeed: 60,
+  backDelay: 800,
+  onComplete:function(self){
+	    $(".typed-cursor").delay(1000).hide(0);
+	}
+}
+
+var typed = new Typed(".typewriter", options);
+
+
 
 $(document).ready(function(){
     $(".btn-open").click(function(){
