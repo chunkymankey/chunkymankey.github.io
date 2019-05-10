@@ -27,11 +27,16 @@
       href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
     <div class="header-div" style="">
@@ -58,7 +63,7 @@
       </ul>
     </div>
     <div>
-      <h1 class="section-header" style="">ABOUT</h1>
+      <h1 class="section-header" style="padding-top: 24px;">ABOUT</h1>
       <div
         style="display: flex; justify-content: space-between; width: 70%; margin: 0 auto;"
       >
@@ -78,7 +83,77 @@
           </p>
         </div>
       </div>
-      <h1 class="section-header" style="">My Experience</h1>
+      <h1 class="section-header" style="">Skills</h1>
+
+      <div style="height: 100px"></div>
+
+      <ul class="skills-bar-container">
+        <li>
+          <div class="progressbar-title">
+            <h3>Python</h3>
+            <span class="percent" id="python-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressblue" id="progress-python"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>Java</h3>
+            <span class="percent" id="java-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressred" id="progress-java"></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>HTM/CSS</h3>
+            <span class="percent" id="css-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressblue" id="progress-css"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>JavaScript / jQuery</h3>
+            <span class="percent" id="javascript-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span
+              class="progressbar progresspurple"
+              id="progress-javascript"
+            ></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>PHP</h3>
+            <span class="percent" id="php-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressorange" id="progress-php"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>MySQL</h3>
+            <span class="percent" id="angular-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span
+              class="progressbar progressgreen"
+              id="progress-angular"
+            ></span>
+          </div>
+        </li>
+      </ul>
+      <h1 class="section-header" style="">Experience</h1>
       <div class="flex-container">
         <div class="item">
           <img class="company-logo" src="./imgs/paypal-logo.jpg" />
@@ -88,7 +163,7 @@
                 >May 2019</span
               >
             </p>
-            <a class="hidden-btn">Learn More</a>
+            <a class="hidden-btn  modal-trigger" href="#modal1">Learn More</a>
           </div>
         </div>
         <div class="item" style="">
@@ -118,16 +193,55 @@
             Fetch<span style="color: #4db6ac;">Mi</span>
           </p>
           <div class="hidden-div">
-              <p class="hidden-text black-text">
-                Co-founder/CTO <br /><span style="font-size: 20px;"
-                  >May 2019</span
-                >
-              </p>
-              <a class="hidden-btn">Learn More</a>
-            </div>
+            <p class="hidden-text black-text">
+              Co-founder/CTO <br /><span style="font-size: 20px;"
+                >May 2019</span
+              >
+            </p>
+            <a class="hidden-btn">Learn More</a>
           </div>
         </div>
       </div>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+            >Agree</a
+          >
+        </div>
+      </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems, []);
+      });
+      //   var lang = {
+      //     java: "80%"
+      //     // Python: "70%",
+      //     // CSS: "70%",
+      //     // JavaScript: "60%",
+      //     // PHP: "60%",
+      //     // Swift: "50%"
+      //   };
+
+      //   var multiply = 4;
+
+      //   $.each(lang, function(language, pourcent) {
+      //     var delay = 500;
+
+      //     setTimeout(function() {
+      //       $("#" + language + "-pourcent").html(pourcent);
+      //     }, delay * multiply);
+
+      //     multiply++;
+      //   });
+      //
+    </script>
   </body>
 </html>
