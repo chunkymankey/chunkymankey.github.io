@@ -533,3 +533,39 @@ body {
     width: 65%;
   }
 }
+
+.flex-grid-contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+a.links {
+  color: #9e9e9e;
+  transition: all 0.3s ease-in-out;
+}
+
+.game-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 70%;
+  padding-bottom: 48px;
+}
+
+a#mail-link:hover {
+  color: #e57373;
+  transition: all 0.3s ease-in-out;
+}
+a#linkedin-link:hover {
+  color: #0077b5;
+  transition: all 0.3s ease-in-out;
+}
+
+a#fb-link:hover {
+  color: #3b5998;
+  transition: all 0.3s ease-in-out;
+}
+
+a#github-link:hover {
+  color: #6e5494;
+  transition: all 0.3s ease-in-out;
+}
