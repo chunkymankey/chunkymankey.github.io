@@ -1,531 +1,422 @@
-<!DOCTYPE HTML>
-<html lang = "en">
-<head>
-  <!-- basic.html -->
-	<title>Justin Luo</title>
-	<meta charset = "UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<link rel="stylesheet" type="text/css" href="stylesheets/global.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic.html -->
+    <title>Justin Luo</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheets/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-</head>
-<body>
-<div id="site-wrapper">
-
-	<!--Nav Bar-->
-		
-		<div class="overlay">
-			<i class="fas fa-times" style="position: absolute; top: 20px; right: 38px; font-size: 36px; color: white; cursor: pointer"></i>
-
-
-			<ul class="side-nav-links center">
-				<div class="container">
-		            <li><a class="navLinks cool-link-mobile" href="#project-section">Portfolio</a></li>
-		            <li><a class="navLinks cool-link-mobile" href="#about-section">About</a></li>
-		            <li><a class="navLinks cool-link-mobile" href="#contact-section">Contact</a></li>
-<!-- 		            <li><a id="downloadResumeLink" class="navLinks cool-link-mobile cool-link-red-mobile" href="other/resume.pdf" target="_blank" style="">Download Resume</a>
- -->			        </li>
-			    </div>
-          </ul>
-		</div>
-		
-	<nav>
-		<div class="nav-wrapper container">
-		  <a class="hide-on-large-only btn-open" style="position: absolute; top: 12px; right: 0;"><i class="material-icons" style="font-size: 36px;">menu</i></a>
-          <a href="https://luo-justin.github.io" class="brand-logo accent-color">luo-justin.github.io</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a class="navLinks cool-link" href="#project-section">Portfolio</a></li>
-            <li><a class="navLinks cool-link" href="#about-section">About</a></li>
-            <li><a class="navLinks cool-link" href="#contact-section">Contact</a></li>
-<!--             <li><a id="downloadResumeLink" class="navLinks cool-link cool-link-red" href="other/justin_luo_resume.PDF" target="_blank" style="">Download Resume</a>
- -->	        </li>
-          </ul>
-          </div>
-	</nav> 
-
-	<!--Intro Section -->
-	<div class="hero">
-		<div style="height: 36px;"></div>
-		<h1 class="introTitle center typewriter" style="display: inline;"></h1>
-		<div style="height: 48px;"></div>
-        <img class="responsive-img circle mainPortrait" src="https://preview.ibb.co/i3jQqA/justin.jpg">
-       
-	</div>
- 	
-
-
-	<!--Projects Section -->
-	<div id="project-section"></div>
-		<div class="flex-grid">
-		  <div id="fetchMiBox" class="col-bigger box-bigger center" style="position: relative;">
-		  	
-		  	<a id="fetchMi" href="#fetchMi-modal" target="_blank" style="display: flex; align-items: center; justify-content: center; height: 100%; text-decoration: none;">
-			  		<h1 class="project-title-large" style="">FetchMi</h1>
-
-			</a>
-
-		  </div>
-		  <div class="col center">
-			  <div id="box2" class="box center" style="background-color: #ffd54f;">
-			  	<a id="wtDuc" href="#wtDuc-modal" target="_blank" style="display: flex; align-items: center; justify-content: center; height: 100%; text-decoration: none;">
-				  	<h2 class="project-title">What the Duc</h2>
-				  		
-				</a>
-			  </div>
-			  <div id="box3" class="box center" style="background-color:#e57373;">
-			  	<a id="personalSite" href="#personalSite-modal" target="_blank" style="display: flex; align-items: center; justify-content: center; height: 100%; text-decoration: none;">
-			  	<h2 class="project-title">My Personal Website<br>
-				 	<i class="material-icons" style="vertical-align: middle; color: white; font-size: 64px; padding-top: 24px;">whatshot</i></h2>
-				</a>
-			  </div>
-		   </div>
-		</div>
-		<div class="flex-grid">
-		  <div class="col box center" style="background-color: #ce93d8;"></div>
-		  <div class="col box center" style="background-color: #4db6ac;"></div>
-		  <div id="emoryCC-box" class="col box center" style="background-color: #616161;">
-		  	<a id="emorycc" href="#emorycc-modal" target="_blank" style="display: flex; align-items: center; justify-content: center; height: 100%; text-decoration: none;">
-			  	<h2 class="project-title">Emory Course Critique</h2>
-			</a>
-		  </div>
-		</div>
-
-
-	<!--About Section -->
-	<div id="about-section" class="container">
-		<h1 class="about-title accent-color">About Me</h1>
-
-		<p class="about-intro">I am currently a sophomore at Emory University majoring in Computer Science (B.S) and Economics (B.A). 
-		</p>
-		<p class="about-text">
-		 I was born in Vancouver, Canada, moved to California, USA until I was 9, and then lived in Shanghai, China for another 9 years. In my free time, I like to build websites (such as this one) or mobile apps. If I'm not doing that, then I can usually be seen watching random videos on youtube or browsing the latest memes on reddit. I also enjoy playing piano and boxing in my spare time. I am currently working as the CTO of FetchMi.
-		</p>
-	</div>
-	<div style="height: 100px"></div>
-	<!--About Section -->
-	<div class="game-section" style="height: 600px">
-		<div class="game-container container">
-			<h1 class="game-title accent-color">A Cool Game<span style="font-size: 18px; color: black">&nbsp &nbsp &nbsp (Coming Soon)</span></h1>
-			
-		
-		</div>
-	</div>
-
-
-	<!--Contact Section -->
-	<div style="height: 36px"></div>
-
-	<div id="contact-section" class="container" style="height: 400px">
-		<div class="game-container">
-			<h1 class="game-title accent-color center">Contact Me</h1>
-			<!-- Add font awesome icons -->
-			<br>
-			<br>
-			<div class="flex-grid-contact center" style="">
-  				<a id="github-link" class="links" href="https://github.com/luo-justin" target="_blank"> <i class="fab fa-github fa-7x" style=""></i></a>
-  				<a id="mail-link" class="links"  href="mailto:justinluo1998@gmail.com?Subject=Hello%20Justin"><i class="fa fa-envelope fa-7x" aria-hidden="true" style=""></i></a>
-  				<a id="fb-link" class="links" href="https://www.facebook.com/justin.luo.395" target="_blank"><i class="fab fa-facebook fa-7x" style=""></i></a>
-  				<a id="linkedin-link" class="links" href="#!"><i class="fab fa-linkedin-in fa-7x" style=""></i></a>
-  			</div>
-		</div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <div class="header-div" style="">
+      <h1 style="text-align: center">
+        Hello, I'm <span style="color: white">Justin Luo</span>. <br />
+        I'm a student interested in <span style="color: white">web</span> and
+        <span style="color: white">mobile</span> programming
+      </h1>
+      <a class="action-btn workBtn" href="#experience">View my work</a>
     </div>
-	
-	<!-- MODAL SECTION -->
-        
-       
-        <!--FetchMi Modal-->
-        <div class="modals" id="fetchMi-modal">
-            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-            <div  id="btn-close-modal" class="close-fetchMi-modal">
-                <i class="material-icons right" style="">close</i>
-                <div class="hide-on-med-and-up" style="height: 24px"></div>
-            </div>
-            <div class="modal-content">
-            	<div class="container">
-	                <h2 class="project-title-large center">FetchMi</span><br>
-				 	<p class="project-date">(Early 2017 - Present)</p></h2></h2>
-				 	<div class="techIcons-container" style="">
-						<i class="techIcons devicon-linux-plain colored" style=""></i>
-						<i class="techIcons devicon-apache-plain-wordmark"></i>
-						<i class="techIcons devicon-mysql-plain-wordmark" style=""></i>
-						<i class="techIcons devicon-php-plain" style=""></i>
-						<i class="techIcons devicon-amazonwebservices-plain-wordmark colored" style=""></i>
-					</div>
-	                <p class="modal-header"><b>Description</b></p>
-	                <p class="modal-text"> FetchMi.com is an internet company that looks to change the way people connect with services in Atlanta. There are over 1200 companies aggregated on this platform and users can search, message, and make payments directly on this web app. </p>
-	                <br>
-	                <p class="modal-header"><b>My Role</b></p>
-	                <p class="modal-text">I am currently working as the CTO of FetchMi. I work on both the front end and back end of this site, and oversee the technologies behind FetchMi. Recently I finished implementing the Algolia search algorithim on our site's search page to create more accurate search results for our users.</p>
-	                <div class="button-wrapper center" style="padding-top: 48px; padding-bottom: 48px">
-	                	<a href="https://fetchmi.com" target="_blank" class="button red z-depth-1" style="">Link To Website</a>
-	            	</div>
-            	</div>
-			</div>
+
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div>
+      <h1 class="section-header" style="padding-top: 24px;">ABOUT</h1>
+      <div
+        style="display: flex; justify-content: space-between; width: 70%; margin: 0 auto;"
+      >
+        <div class="header-img" style="margin-right: 60px;">
+          <img
+            src="./imgs/justin-header.jpg"
+            style="background-image: white;"
+          />
         </div>
- 
-            
-
-
-
-         <!--What the Duc Modal-->
-        <div class="modals" id="wtDuc-modal">
-            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-            <div  id="btn-close-modal" class="close-wtDuc-modal"> 
-                <i class="material-icons right" style="">close</i>
-            	<div class="hide-on-med-and-up" style="height: 24px"></div>
-
-            </div>
-            
-            <div class="modal-content" style="">
-            	<div class="container">
-	                <h2 class="project-title-large center">What the Duc</span><br>
-	                	<p class="project-date">(Early 2018 - Present)</p></h2>
-	                <p class="modal-header"><b>Description</b></p>
-	                <p class="modal-text">An App built with React Native that lets users rate the horrific food of Emory's dining hall (nicknamed the 'DUC') </p>
-	                <br>
-	                <p class="modal-header"><b>My Role</b></p>
-	                <p class="modal-text">Currently working on both the back end and front end of this React Native app alongisde two other friends.</p>
-	                <div class="button-wrapper center" style="padding-top: 48px; padding-bottom: 48px">
-	                	<a href="#!" target="_blank" class="button z-depth-1" style="">Coming Soon</a>
-	            	</div>
-            	</div>
-			</div>
+        <div class="about-div">
+          <p
+            style="font-size: 28px; font-weight: 300; text-align: left; margin-top: 28px; letter-spacing: 0.4px;"
+          >
+            I'm a rising senior at Emory University majoring in Computer Science
+            and Economics. Building web and mobile apps are my passions. In my
+            free time, I enjoy playing video games, piano, and boxing.
+          </p>
         </div>
+      </div>
+      <h1 class="section-header" style="">Skills</h1>
 
-         <!--Personal Site  Modal-->
-        <div class="modals" id="personalSite-modal">
-            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-            <div  id="btn-close-modal" class="close-personalSite-modal"> 
-                <i class="material-icons right" style="">close</i>
-            	<div class="hide-on-med-and-up" style="height: 24px"></div>
+      <div style="height: 100px"></div>
 
+      <ul class="skills-bar-container">
+        <li>
+          <div class="progressbar-title">
+            <h3>Python</h3>
+            <span class="percent" id="python-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressblue" id="progress-python"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>Java</h3>
+            <span class="percent" id="java-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressred" id="progress-java"></span>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <h3>HTM/CSS</h3>
+            <span class="percent" id="css-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressblue" id="progress-css"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>JavaScript / jQuery</h3>
+            <span class="percent" id="javascript-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span
+              class="progressbar progresspurple"
+              id="progress-javascript"
+            ></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>PHP</h3>
+            <span class="percent" id="php-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span class="progressbar progressorange" id="progress-php"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="progressbar-title">
+            <h3>MySQL</h3>
+            <span class="percent" id="angular-pourcent"></span>
+          </div>
+          <div class="bar-container">
+            <span
+              class="progressbar progressgreen"
+              id="progress-angular"
+            ></span>
+          </div>
+        </li>
+      </ul>
+      <div style="background-color: #fafafa; padding-bottom: 96px;">
+        <h1 id="experience" class="section-header" style="">Experience</h1>
+        <div class="flex-container">
+          <div class="item">
+            <img class="company-logo" src="./imgs/paypal-logo.jpg" />
+            <div class="hidden-div">
+              <p class="hidden-text black-text">
+                PayPal<br /><span style="font-size: 20px;"
+                  >Software Engineer Intern</span
+                >
+              </p>
+              <a class="hidden-btn  modal-trigger" href="#paypalModal"
+                >Learn More</a
+              >
             </div>
-            
-            <div  class="modal-content" style="">
-            	<div class="container">
-	                <h2 class="project-title-large center">Personal Website</span><br>
-	                	<p class="project-date">(Early 2018)</p></h2>
-	                <div class="techIcons-container" style="">
-						<i class="techIcons devicon-html5-plain-wordmark" style=""></i>
-						<i class="techIcons devicon-javascript-plain"></i>
-						<i class="techIcons devicon-jquery-plain-wordmark"></i>
-						<i class="techIcons devicon-sass-original"></i>
-						<i class="techIcons devicon-css3-plain-wordmark"></i>
-
-					</div>
-	                <p class="modal-header"><b>Description</b></p>
-	                <p class="modal-text">This static site was created from scratch (no frameworks or website builders) and only uses Jquery and some outside fonts as dependancies. It was made to showcase my tech skills as well as my front end/design abilities. It is fully responsive and mobile-friendly as well!</p>
-	                <br>
-	                <p class="modal-header"><b>My Role</b></p>
-	                <p class="modal-text">I created this website with my bare hands.</p>
-	                <div class="button-wrapper center" style="padding-top: 48px; padding-bottom: 48px">
-	                	<a href="https://luo-justin.github.io" target="_blank" class="button z-depth-1" style="">This would Link Back Here...</a>
-	            	</div>
-            	</div>
+          </div>
+          <div class="item" style="">
+            <img class="company-logo" src="./imgs/cartoon.jpg" />
+            <div class="hidden-div">
+              <p class="hidden-text black-text">
+                Cartoon Network (WarnerMedia)<br /><span
+                  style="font-size: 20px;"
+                  >Software Developer Intern</span
+                >
+              </p>
+              <a class="hidden-btn  modal-trigger" href="#cnModal"
+                >Learn More</a
+              >
             </div>
-		</div>	
-
-
-        <!--Emory Course Critique Modal-->
-        <div class="modals" id="emorycc-modal">
-            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-            <div  id="btn-close-modal" class="close-emorycc-modal"> 
-                <i class="material-icons right" style="">close</i>
-            	<div class="hide-on-med-and-up" style="height: 24px"></div>
-
+          </div>
+          <div class="item vezzy-box">
+            <img class="company-logo" src="./imgs/Original.png" />
+            <div class="hidden-div">
+              <p class="hidden-text black-text">
+                Vezzy LLC<br /><span style="font-size: 20px;"
+                  >Co-founder/CTO</span
+                >
+              </p>
+              <a class="hidden-btn  modal-trigger" href="#vezzyModal"
+                >Learn More</a
+              >
             </div>
-            
-            <div class="modal-content" style="">
-            	<div class="container">
-	                <h2 class="project-title-large center">Emory Course Critique</span><br>
-	                	<p class="project-date">(Late 2017)</p></h2>
-	                	<div class="techIcons-container" style="">
-							<i class="techIcons devicon-mongodb-plain-wordmark"></i>
-							<i class="techIcons devicon-express-original-wordmark"></i>
-							<i class="techIcons devicon-react-original-wordmark"></i>
-							<i class="techIcons devicon-nodejs-plain-wordmark" style=""></i>
-
-					</div>
-	                <p class="modal-header"><b>Description</b></p>
-	                <p class="modal-text">Emory Course Critique is a review site that lets users review and read reviews on classes relevant to them. It contains all the courses and professors that the Emory Undergraduate program has. Currently this site is in the trial stage.</p>
-	                <br>
-	                <p class="modal-header"><b>My Role</b></p>
-	                <p class="modal-text">I worked mostly on the front end of this site using React.</p>
-	                <div class="button-wrapper center" style="padding-top: 48px; padding-bottom: 48px">
-	                	<a href="https://professorsaid.com" target="_blank" class="button z-depth-1" style="">Link To Website</a>
-	            	</div>
-            	</div>
-			</div>
+          </div>
+          <div class="item fetchmi-box" style="">
+            <p class="fetchmi-text" style="">
+              Fetch<span style="color: #4db6ac;">Mi</span>
+            </p>
+            <div class="hidden-div">
+              <p class="hidden-text black-text">
+                FetchMi LLC <br /><span style="font-size: 20px;"
+                  >Co-founder/CTO</span
+                >
+              </p>
+              <a class="hidden-btn  modal-trigger" href="#fetchmiModal"
+                >Learn More</a
+              >
+            </div>
+          </div>
         </div>
-		</div>
-	</div>
-	<footer>
-		<div style="height: 64px; border-top: 1px solid #ccc">
-			<div class="container" style="height: 100%">
-				<div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; height: 100%">
-					<a href="http://opensource.org/licenses/mit-license.html" style="margin: 0 auto; border-bottom: 1px solid black; color: black">MIT License</a>
-					<a style="margin: 0 auto;  color: black">All Rights Reserved</a>
-				</div>
-			</div>
-		</div>
-	</footer>
+      </div>
 
+      <h1 class="section-header" style="padding-bottom: 0">Projects</h1>
+      <div class="project-container">
+        <div class="project-item">
+          <img class="project-logo" src="./imgs/emoryccmock.png" />
+        </div>
+        <div class="project-item2">
+          <div>
+            <a class="project-link" href="https://professorsaid.com"
+              >Professor Said</a
+            >
+            <p class="project-des">
+              Professor Said is a collaboration project that allows Chinese
+              students at Emory find better courses for them to take.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-item">
+          <img class="project-logo" src="./imgs/goodhome.png" />
+        </div>
+        <div class="project-item2">
+          <div>
+            <a class="project-link disabled" href="#!">Good Home</a>
+            <p class="project-des">
+              A simplistic yet highly customizable widget based home page for
+              your browser. <span>Coming Soon</span>>.
+            </p>
+          </div>
+        </div>
+      </div>
 
-</div>
+      <div class="game-container">
+        <h1 class="section-header">Contact Me</h1>
+        <!-- Add font awesome icons -->
 
+        <div class="flex-grid-contact center" style="">
+          <a
+            id="github-link"
+            class="links"
+            href="https://github.com/luo-justin"
+            target="_blank"
+          >
+            <i class="fab fa-github fa-7x" style=""></i
+          ></a>
+          <a
+            id="mail-link"
+            class="links"
+            href="mailto:justinluo1998@gmail.com?Subject=Hello%20Justin"
+            ><i class="far fa-envelope fa-7x" aria-hidden="true" style=""></i
+          ></a>
+          <a
+            id="fb-link"
+            class="links"
+            href="https://www.facebook.com/justin.luo.395"
+            target="_blank"
+            ><i class="fab fa-facebook fa-7x" style=""></i
+          ></a>
+          <a
+            id="linkedin-link"
+            class="links"
+            href="https://www.linkedin.com/in/justin-luo-65481017b/"
+            ><i class="fab fa-linkedin-in fa-7x" style=""></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="paypalModal" class="modal">
+      <div
+        class="modal-content"
+        style="background-color: white; padding-bottom: 48px;"
+      >
+        <h4>PayPal</h4>
+        <p>May 2019-Current</p>
+        <br />
+        <ul>
+          <li>
+            <p style="font-size: 20px;">
+              Built a back-end tool with Node JS/Python that allows PayPal
+              developers and data analysts to validate the 10,000 experiments
+              (~3 billion daily requests) currently running on PayPal’s
+              Experimentation Platform, saving both development time and server
+              costs. <br /><br />
 
-<script src="js/animatedModal.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+              Built a user-friendly UI using React/Redux that provides helpful
+              feedback to PayPal developers after validating their experiments,
+              allowing them to easily pinpoint and fix issues in their
+              experimentation integration.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="cnModal" class="modal">
+      <div
+        class="modal-content"
+        style="background-color: white; padding-bottom: 48px;"
+      >
+        <h4>Cartoon Network (WarnerMedia)</h4>
+        <p>Jan 2019-May 2019</p>
+        <br />
+        <p style="font-size: 20px;">
+          Developed pages for the newly released Cartoon Network Arcade app
+          using HTML/CSS/Node/AWS that has been used by hundreds of thousands of
+          end users. <br /><br />
+          Created an Express API using AWS serverless that allows all Turner
+          divisions (e.g. CNN, Adult Swim, TBS) to integrate COGIX polling
+          systems in an easier and more secure manner. <br /><br />
+          Developed and debugged front end components for cartoonnetwork.com
+          using HTML/CSS/JavaScript. <br /><br />
+          Participated in the deployment process for many Cartoon Network games,
+          such as for “Teen Titans Go” and “We Bare Bears”, to the main site
+          using Bamboo and AWS.
+        </p>
+      </div>
+    </div>
+    <div id="vezzyModal" class="modal">
+      <div
+        class="modal-content"
+        style="background-color: white; padding-bottom: 48px;"
+      >
+        <h4>Vezzy LLC.</h4>
+        <p>Jan 2019-May 2019</p>
+        <br />
+        <p style="font-size: 20px;">
+          Led a technology team of five people to complete a buying & selling
+          app (iOS/Android) for college students two weeks ahead of time on a
+          tight deadline and budget. <Br /><br />Published the iOS app which has
+          led to over 2 thousand downloads in two weeks from Emory University
+          alone. <br /><br />Designed and built the UI/UX of the iOS app using
+          Swift. <br /><br />Integrated efficient NoSQL queries so that
+          thousands of simultaneous user connections were possible. <br /><Br />
+          Helped build third-party payment systems (generating over 7 thousand
+          dollars in transactions), custom instant messaging, and back end cloud
+          functions using JavaScript.
+        </p>
+      </div>
+    </div>
+    <div id="fetchmiModal" class="modal">
+      <div
+        class="modal-content"
+        style="background-color: white; padding-bottom: 48px;"
+      >
+        <h4>FetchMi LLC.</h4>
+        <p>Jan 2019-May 2019</p>
+        <br />
+        <p style="font-size: 20px;">
+          Led a technology team of six people in implementing a web app to help
+          locals in Atlanta browse, search, compare, message, and book services
+          in their neighborhood. <br /><br />
+          Implemented key features of the web app using PHP (CodeIgniter),
+          including instant messaging, efficient search, and secure user
+          authentication.<br /><br />
+          Deployed the site using Amazon Web Services and managed all
+          development and operations of the site. <br /><br />Helped design and
+          build the UI/UX of the web app from scratch using HTML/CSS/JavaScript.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div style="height: 64px; border-top: 1px solid #ccc">
+        <div class="container" style="height: 100%">
+          <div
+            style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; height: 100%"
+          >
+            <a
+              href="http://opensource.org/licenses/mit-license.html"
+              style="margin: 0 auto; border-bottom: 1px solid black; color: black"
+              >MIT License</a
+            >
+            <a style="margin: 0 auto;  color: black">All Rights Reserved</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-<script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems, []);
+      });
+      //   var lang = {
+      //     java: "80%"
+      //     // Python: "70%",
+      //     // CSS: "70%",
+      //     // JavaScript: "60%",
+      //     // PHP: "60%",
+      //     // Swift: "50%"
+      //   };
 
-var options = {
-  strings: ["Hey there!" , "<span style='color: #03a9f4'>Justin Luo</span> welcomes you to his site!" , "<span style='color: #03a9f4'>Justin Luo.</span>"],
-  typeSpeed: 60,
-  backDelay: 800,
-  onComplete:function(self){
-	    $(".typed-cursor").delay(1000).hide(0);
-	}
-}
+      //   var multiply = 4;
 
-var typed = new Typed(".typewriter", options);
+      //   $.each(lang, function(language, pourcent) {
+      //     var delay = 500;
 
+      //     setTimeout(function() {
+      //       $("#" + language + "-pourcent").html(pourcent);
+      //     }, delay * multiply);
 
-
-$(document).ready(function(){
-    $(".btn-open").click(function(){
-        $(".overlay").fadeToggle(200);
-       $(this).toggleClass('btn-open').toggleClass('btn-close');
-    });
-});
-$('.overlay').on('click', function(){
-    $(".overlay").fadeToggle(200);   
-    $(".btn-open").toggleClass('btn-open').toggleClass('btn-close');
-    open = false;
-});
-
-	// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .not('[href="#fetchMi-modal"]')
-  .not('[href="#wtDuc-modal"]')
-  .not('[href="#emorycc-modal"]')
-  .not('[href="#personalSite-modal"]')
-
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
-
-
-//fetchMi Modal
-	$("#fetchMi").animatedModal({
-	    modalTarget:'fetchMi-modal',
-	    animatedIn:'bounceInUp',
-	    animatedOut:'bounceOutDown',
-	    color:'#0288d1',
-	    // Callbacks
-	    beforeOpen: function() {
-	        console.log("The animation was called");
-	        $('#fetchMi-modal').addClass('ios-scroll');
-
-
-	    },           
-	    afterOpen: function() {
-	        console.log("The animation is completed");
-
-	    }, 
-	    beforeClose: function() {
-	        console.log("The animation was called");
-
-	    }, 
-	    afterClose: function() {
-	        console.log("The animation is completed");
-	       	$('#fetchMi-modal').removeClass('ios-scroll');
-
-	    }
-	});
-
-	//emorycc Modal
-	$("#emorycc").animatedModal({
-	    modalTarget:'emorycc-modal',
-	    animatedIn:'bounceInUp',
-	    animatedOut:'bounceOutDown',
-	    color:'#795548',
-	    // Callbacks
-	    beforeOpen: function() {
-	        console.log("The animation was called");
-	        $('#emorycc-modal').addClass('ios-scroll');
-
-	    },           
-	    afterOpen: function() {
-	        console.log("The animation is completed");
-	    }, 
-	    beforeClose: function() {
-	        console.log("The animation was called");
-	    }, 
-	    afterClose: function() {
-	        console.log("The animation is completed");
-	       	$('#emorycc-modal').removeClass('ios-scroll');
-
-	    }
-	});
-
-	//whatTheDuc Modal
-	$("#wtDuc").animatedModal({
-	    modalTarget:'wtDuc-modal',
-	    animatedIn:'bounceInUp',
-	    animatedOut:'bounceOutDown',
-	    color:'#f9a825',
-	    // Callbacks
-	    beforeOpen: function() {
-	        console.log("The animation was called");
-	       	$('#wtDuc-modal').addClass('ios-scroll');
-
-	    },           
-	    afterOpen: function() {
-	        console.log("The animation is completed");
-	    }, 
-	    beforeClose: function() {
-	        console.log("The animation was called");
-	    }, 
-	    afterClose: function() {
-	        console.log("The animation is completed");
-	       	$('#wtDuc-modal').removeClass('ios-scroll');
-
-	    }
-	});
-
-
-
-	//Personal Website Modal
-	$("#personalSite").animatedModal({
-	    modalTarget:'personalSite-modal',
-	    animatedIn:'bounceInUp',
-	    animatedOut:'bounceOutDown',
-	    color:'#e57373',
-	    // Callbacks
-	    beforeOpen: function() {
-	     console.log("The animation was called");
-	     $('#personalSite-modal').addClass('ios-scroll');
-
-
-	    },           
-	    afterOpen: function() {
-	        console.log("The animation is completed");
-	    }, 
-	    beforeClose: function() {
-	        console.log("The animation was called");
-
-	    }, 
-	    afterClose: function() {
-	        console.log("The animation is completed");
-	       	$('#personalSite-modal').removeClass('ios-scroll');
-
-	    }
-	});
-
-
-/*hide nav bar on scroll down*/
-$(document).ready(function () {
-  
-  'use strict';
-  
-   var c, currentScrollTop = 0,
-       navbar = $('nav');
-
-   $(window).scroll(function () {
-      var a = $(window).scrollTop();
-      var b = navbar.height();
-     
-      currentScrollTop = a;
-     
-      if (c < currentScrollTop && a > b + b) {
-        navbar.addClass("scrollUp");
-      } else if (c > currentScrollTop && !(a <= b)) {
-        navbar.removeClass("scrollUp");
-      }
-      c = currentScrollTop;
-  });
-  
-});
-
-
-$(document).scroll(function() {
-    if($(document).scrollTop() > 50){
-    	$('nav').addClass('z-depth-1');
-
-    }
-    else if($(document).scrollTop() < 50)
-    {
-    	 $('nav').removeClass('z-depth-1');
-
-
-
-    }
-});
-
-function getScrollbarWidth() {
-  var outer = document.createElement("div");
-  outer.style.visibility = "hidden";
-  outer.style.width = "100px";
-  outer.style.msOverflowStyle = "scrollbar"; // needed for WinJS apps
-
-  document.body.appendChild(outer);
-
-  var widthNoScroll = outer.offsetWidth;
-  // force scrollbars
-  outer.style.overflow = "scroll";
-
-  // add innerdiv
-  var inner = document.createElement("div");
-  inner.style.width = "100%";
-  outer.appendChild(inner);
-
-  var widthWithScroll = inner.offsetWidth;
-
-  // remove divs
-  outer.parentNode.removeChild(outer);
-  return widthNoScroll - widthWithScroll;
-}
-
-
-
-</script>
-</body>
+      //     multiply++;
+      //   });
+      //
+    </script>
+  </body>
 </html>
