@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -159,6 +163,10 @@ body {
   display: flex;
   width: 90%;
   margin: 0 auto;
+}
+
+.workBtn {
+  line-height: 36px;
 }
 
 #emorycc {

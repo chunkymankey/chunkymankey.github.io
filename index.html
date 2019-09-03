@@ -45,7 +45,7 @@
         I'm a student interested in <span style="color: white">web</span> and
         <span style="color: white">mobile</span> programming
       </h1>
-      <a class="action-btn">View my work</a>
+      <a class="action-btn workBtn" href="#experience">View my work</a>
     </div>
 
     <div class="area">
@@ -154,7 +154,7 @@
         </li>
       </ul>
       <div style="background-color: #fafafa; padding-bottom: 96px;">
-        <h1 class="section-header" style="">Experience</h1>
+        <h1 id="experience" class="section-header" style="">Experience</h1>
         <div class="flex-container">
           <div class="item">
             <img class="company-logo" src="./imgs/paypal-logo.jpg" />
@@ -237,12 +237,10 @@
         </div>
         <div class="project-item2">
           <div>
-            <a class="project-link" href="https://professorsaid.com"
-              >Good Home</a
-            >
+            <a class="project-link disabled" href="#!">Good Home</a>
             <p class="project-des">
               A simplistic yet highly customizable widget based home page for
-              your browser.
+              your browser. <span>Coming Soon</span>>.
             </p>
           </div>
         </div>
@@ -295,8 +293,16 @@
         <ul>
           <li>
             <p style="font-size: 20px;">
-              Currently working on PayPal's Tracking and Experimentation
-              Platform
+              Built a back-end tool with Node JS/Python that allows PayPal
+              developers and data analysts to validate the 10,000 experiments
+              (~3 billion daily requests) currently running on PayPal’s
+              Experimentation Platform, saving both development time and server
+              costs. <br /><br />
+
+              Built a user-friendly UI using React/Redux that provides helpful
+              feedback to PayPal developers after validating their experiments,
+              allowing them to easily pinpoint and fix issues in their
+              experimentation integration.
             </p>
           </li>
         </ul>
